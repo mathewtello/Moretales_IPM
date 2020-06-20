@@ -5,10 +5,6 @@ date: "12 de junio de 2020"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 **TITLE:** Hyperkeystone Palm Species Demography: Preliminary Modelling of *Mauritia flexuosa* for Sustainable Harvest in Tena, Ecuador.  
 **AUTHORS:** Tello, M. & Penhuela, M.C.  
 **INTRODUCTION:**  
@@ -132,7 +128,7 @@ plot(size,sizeNext)
 ### Model Option 3:
 ##### Maximum number of leaves
 
-The same process of data initial arrangement was executed. For the dependent variable, from the number of leaves in each month, the maximum number was obtained. 
+The same process of data initial arrangement was executed. The maximum number was obtained from the number of leaves in each month for the dependent variable.
 
 ````{r,message=FALSE,warning=FALSE}
 library(dplyr)
