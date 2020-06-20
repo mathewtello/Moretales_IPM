@@ -14,7 +14,6 @@ knitr::opts_chunk$set(echo = TRUE)
 **INTRODUCTION:**  
 **OBJECTIVES:** Assess the model and further identification of the size ranges and processes that contribute the most to the population stability for management purposes.  
 **METHODS:** For this, a 1-ha plot was established on a flooded forest dominated by *M.flexuosa* in the Napo river basin where 571 individuals were sampled for three years on a monthly basis.
-![Scheme](C:/Users/LENOVO/Documents/Github/Methods2.jpg)
 ![](img/Methods2.jpg)
 This documents specifies the detailed R proccess for establishing each vital rate model for the building an IPM.
 
@@ -43,6 +42,7 @@ colnames(datos) <- c("size","sizeNext","surv")
 m1 <- glm(sizeNext~size,data = datos)
 summary(m1)
 plot(bald1,bald2)
+![](img/Output1.png)
 ```
 
 ### **Model Option 2:**
@@ -119,6 +119,7 @@ write.csv(df, "matriz.csv")
 m2 <- glm(sizeNext~size, data = dff)
 summary(m2)
 plot(size,sizeNext)
+![](img/Output2.png)
 ```
 
 ### Model Option 3:
@@ -144,4 +145,5 @@ sizeNext <- maxim
 m3 <- glm(sizeNext~size)
 summary(m3)
 plot(size,sizeNext)
+![](img/Output3.png)
 ```
