@@ -42,8 +42,8 @@ colnames(datos) <- c("size","sizeNext","surv")
 m1 <- glm(sizeNext~size,data = datos)
 summary(m1)
 plot(bald1,bald2)
-![](img/Output1.png)
 ```
+![](img/Output1.png)
 
 ### **Model Option 2:**
 ##### *Leaf production rate mean*
@@ -119,8 +119,8 @@ write.csv(df, "matriz.csv")
 m2 <- glm(sizeNext~size, data = dff)
 summary(m2)
 plot(size,sizeNext)
-![](img/Output2.png)
 ```
+![](img/Output2.png)
 
 ### Model Option 3:
 ##### Maximum number of leaves
@@ -145,5 +145,5 @@ sizeNext <- maxim
 m3 <- glm(sizeNext~size)
 summary(m3)
 plot(size,sizeNext)
-![](img/Output3.png)
 ```
+![](img/Output3.png)
