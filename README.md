@@ -19,8 +19,13 @@ This documents specifies the detailed R proccess for establishing each vital rat
 
 ***
 
+For the IPM construction we need three functions: growth, survival and fecundity. In this section we will be determining the growth function through the analysis of the available data measuring our species growth. The data collected for this is mainly from number of leaves present . However, we consider two other options calculated from the first one. These are leaf production rate mean and maximum number of leaves. From these, generalized linear model are adjusted to data and the model with the best AIC score is chosen. 
+
 ### **Model Option 1:**
+
 ##### *Number of leaves present*
+
+Raw data is filtered in order to extract only the segment of the data we are interested in. In this case we have filter only the objective species, a time period of three years, and assigned a column to determine if they have survived or not at this period of time. Then, we use *glm()* function to create the model. The independent variable is the number of leaves the individual started with at the beginning of the survey, and  the dependent variables is the number of leaves at the end of the survey.
 
 ````{r,message=FALSE,warning=FALSE}
 library(dplyr)
@@ -48,10 +53,12 @@ plot(bald1,bald2)
 ### **Model Option 2:**
 ##### *Leaf production rate mean*
 
+From the data used above, we calculated the rate at which leaves were being produced in every individual between every month. In this case, the independent variable is the initial number of leaves, and the dependent variable is the initian number of leaves times multiplied by leaf production average rate of that individual.
+
 ````{r,message=FALSE,warning=FALSE}
 library(dplyr)
 setwd("C:/Users/LENOVO/Documents")
-datos_p <- read.csv2("MISAHUALLI_Plántulas_25_11_18.csv")
+datos_p <- read.csv2("MISAHUALLI_PlÃ¡ntulas_25_11_18.csv")
 datos <- read.csv2("MISAHUALLI_Morete_Dic_12_2018_MCP-IKIAM.csv")
 datos <- dplyr::filter(datos, Common_name == "Morete")
 datos <- filter(datos, EstadioClass != "A")
@@ -124,6 +131,8 @@ plot(size,sizeNext)
 
 ### Model Option 3:
 ##### Maximum number of leaves
+
+The same process of data initial arrangement was executed. For the dependent variable, from the number of leaves in each month, the maximum number was obtained. 
 
 ````{r,message=FALSE,warning=FALSE}
 library(dplyr)
