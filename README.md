@@ -120,7 +120,7 @@ m1 <- glm(sizeNext~size,data = main_data)
 summary(m1)
 ```
 
-![ms1](img\ms1.PNG)
+![ms1](img/ms1.PNG)
 
 
 
@@ -171,7 +171,7 @@ m2 <- glm(sizeNext~size, data = dff)
 summary(m2)
 ```
 
-![ms2](img\ms2.PNG)
+![ms2](img/ms2.PNG)
 
 
 
@@ -204,4 +204,4 @@ m3 <- glm(sizeNext~size)
 summary(m3)
 ```
 
-![ms3](img\ms3.PNG)
+![ms3](img/ms3.PNG)
