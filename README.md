@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 **INTRODUCTION:**  
 **OBJECTIVES:** Assess the model and further identification of the size ranges and processes that contribute the most to the population stability for management purposes.  
 **METHODS:** For this, a 1-ha plot was established on a flooded forest dominated by *M.flexuosa* in the Napo river basin where 571 individuals were sampled for three years on a monthly basis.
-![Scheme](C:/Users/LENOVO/Desktop/Methods2.jpg)
+![Scheme](C:/Users/LENOVO/Documents/Github/Methods2.jpg)
 This documents specifies the detailed R proccess for establishing each vital rate model for the building an IPM.
 
 ***
