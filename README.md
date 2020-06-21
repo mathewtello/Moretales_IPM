@@ -65,7 +65,7 @@ view(main_data)
 view(sdlngs_data)
 ```
 
-![](img\GS.2.PNG)
+![](img/GS.2.PNG)
 
 **Figure 2.** Quick view of data and columns from *M. flexuosa* seedlings individuals.
 
